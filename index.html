@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Price Tracker</title>
+    <title>Crypto Guess Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1><i class="fas fa-coins"></i> Crypto Tracker</h1>
-        
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search cryptocurrency...">
+    <div id="game">
+        <h1>Crypto Guess Game</h1>
+        <div id="start-screen">
+            <button id="start-button">Start Game</button>
         </div>
-
-        <div class="loading" id="loading">Loading...</div>
-        
-        <div class="crypto-grid" id="cryptoContainer"></div>
+        <div id="game-screen" style="display: none;">
+            <h2>Round <span id="round">1</span></h2>
+            <p>Symbol: <span id="hint-symbol">?</span></p>
+            <p>Rank: <span id="hint-rank">?</span></p>
+            <p>Price: <span id="hint-price">?</span></p>
+            <p>Market Cap: <span id="hint-market-cap">?</span></p>
+            <p>First Letter: <span id="hint-first-letter">?</span></p>
+            <p>Year: <span id="hint-year">?</span></p>
+            <input id="guess-input" type="text" placeholder="Guess the coin">
+            <button id="guess-button">Guess</button>
+            <p id="feedback"></p>
+            <button id="next-button" style="display: none;">Next Round</button>
+        </div>
+        <div id="end-screen" style="display: none;">
+            <h2>Game Over</h2>
+            <p>Score: <span id="score">0</span>/3</p>
+            <p>Coins: <span id="coins-list">None</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
