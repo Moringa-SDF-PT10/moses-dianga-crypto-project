@@ -1,64 +1,58 @@
-# moses-dianga-crypto-project - Crypto Guess Challenge
-
 Project Summary
 
-The Crypto Guess Challenge is an interactive single-page application (SPA) where players guess cryptocurrency names based on hints like symbol, rank, price, market cap, first letter, and launch year. Built with HTML, CSS, and JavaScript, it uses the CoinPaprika API for real-time data. The game features three rounds, instant feedback, a final score, and a restart option. Developed for the Moringa School SDF-PT10 Phase 1 Final Project, it showcases asynchronous API integration, event listeners, and GitHub Pages deployment.
+The Crypto Guess Challenge is an interactive single-page application (SPA) that challenges players to guess cryptocurrency names based on hints such as symbol, rank, price, market cap, first letter, and launch year. It has been built with HTML, CSS, and JavaScript, it integrates the CoinPaprika API to fetch real-time cryptocurrency data. The game consists of three rounds, provides instant feedback on guesses, displays a final score, and provides a restart option for replayability. I developed this crypto guess game for the Moringa School SDF-PT10 Phase 1 Final Project to demonstrate asynchronous API calls, event handling, and deployment on GitHub Pages.
 
 How to Play
 
-# Click "Start Game" to begin.
-# View hints for a mystery cryptocurrency (e.g., Symbol: BTC, Rank: 1).
-# Type your guess and click "Guess" or press Enter.
-# See feedback: "Correct " or "Wrong  It was [Coin Name]".
-# Click "Next Round" to continue (3 rounds total).
-# Check your score and coin names at the end.
-# Click "Play Again" to restart.
+Start the Game:
+
+Click the "Start Game" button on the welcome screen.
+
+View Hints:
+
+A mystery cryptocurrency is displayed with hints: Symbol (e.g., BTC) Rank (market cap ranking) Price (USD) Market Cap (USD) First Letter of the coin’s name Launch Year
+
+Submit a Guess: Enter your guess in the input field and click "Guess" or press Enter.
+
+Receive Feedback: Correct guesses show "Correct 😊" and earn a point. Incorrect guesses show "Wrong 😞 It was [Coin Name]".
+
+Continue Rounds: Click "Next Round" to proceed (3 rounds total). View Results: After three rounds, see your score (out of 3) and the coin names. Replay: Click "Play Again" to start a new game.
 
 Technologies Used
 
-#HTML: Structures the game’s layout.
-# CSS: Styles the interface with a clean, centered design.
-# JavaScript: Handles game logic, API calls, and interactivity.
-# CoinPaprika API: Provides cryptocurrency data via:
-https://api.coinpaprika.com/v1/coins
-https://api.coinpaprika.com/v1/tickers/{coin_id}
-#GitHub Pages: Hosts the live demo.
+1. HTML: Structures the SPA with elements for the start screen, game interface (hints, input, buttons), and end screen.
+2. CSS: Styles the game with a centered layout, clean design, and responsive elements using properties like text-align, padding, and background-color.
+3. JavaScript: Implements game logic, including:
+- Fetching data from the CoinPaprika API.
+- Handling user interactions via event listeners.
+- Managing game state (rounds, score, coins).
+- Updating the DOM dynamically.
 
-How to Run Locally
-Clone the repository: git clone https://github.com/Moringa-SDF-PT10/firstname-lastname-crypto-project.git
+4. CoinPaprika API: Provides real-time data via:
+- https://api.coinpaprika.com/v1/coins (coin list).
+- https://api.coinpaprika.com/v1/tickers/{coin_id} (coin details).
 
-Navigate to the directory: cd moses-dianga-crypto-project
+5. GitHub Pages: Hosts the live application on the gh-pages branch.
 
-Open index.html in a browser or use: npx live-server
+How to Run the App Locally
 
-Note: Requires an internet connection for API data.
+To run the Crypto Guess Challenge locally:
 
-Project Structure
+- Clone the Repository: git clone https://github.com/Moringa-SDF-PT10/moses-dianga-crypto-project.git
+- Navigate to the Directory: cd moses-dianga-crypto-project
+- Open the Application:
+- Open index.html in a web browser (liveserver on VS Code - e.g., Chrome, Firefox).
 
-moses-dianga-crypto-project/
+Live GitHub Pages Version
 
-# index.html    # HTML structure
-# style.css     # CSS styling
-# script.js     # JavaScript logic
-# README.md     # Documentation
+Play the Crypto Guess Challenge online:
 
-Technical Features
-
-# SPA: Single index.html with no redirects.
-# API: Async fetch for CoinPaprika data.
-# Events: Click (start, guess, next, restart), keypress (Enter).
-# Array Iteration: forEach for coin names display.
-# DRY Code: Functions for API calls, hints, and guesses.
-# Deployment: Private repo on GitHub Pages (gh-pages).
+https://moringa-sdf-pt10.github.io/moses-dianga-crypto-project/
 
 Acknowledgments
 
-# CoinPaprika: For the public API.
-# Moringa School: For project guidance.
+1.CoinPaprika: For providing a free API for cryptocurrency data. 
+2. Moringa School: For guidance and support during the SDF-PT10 program. 
+3. GitHub: For hosting the repository and GitHub Pages.
 
-# Submitted for Moringa School SDF-PT10 Phase 1 Final Project, due April 21, 2025.
-
-
-
-
-
+Submitted to Moringa School Phase 1 Final Project.
