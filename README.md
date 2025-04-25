@@ -57,9 +57,11 @@ Play the Crypto Guess Challenge online:
 https://moringa-sdf-pt10.github.io/moses-dianga-crypto-project/
 
 Acknowledgments
+
 1.CoinPaprika: For providing a free API for cryptocurrency data.
 2. Moringa School: For guidance and support during the SDF-PT10 program.
 3. GitHub: For hosting the repository and GitHub Pages.
+
 
 Submitted to Moringa School Phase 1 Final Project.
 
