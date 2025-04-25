@@ -2,7 +2,7 @@
 
 Project Summary
 
-The Crypto Guess Challenge is an interactive single-page application (SPA) that challenges players to guess cryptocurrency names based on hints such as symbol, rank, price, market cap, first letter, and launch year. Built with HTML, CSS, and JavaScript, it integrates the CoinPaprika API to fetch real-time cryptocurrency data. The game consists of three rounds, provides instant feedback on guesses, displays a final score, and offers a restart option for replayability. Developed for the Moringa School SDF-PT10 Phase 1 Final Project, it demonstrates asynchronous API calls, event handling, and deployment on GitHub Pages, meeting all project requirements.
+The Crypto Guess Challenge is an interactive single-page application (SPA) that challenges players to guess cryptocurrency names based on hints such as symbol, rank, price, market cap, first letter, and launch year. It has been built with HTML, CSS, and JavaScript, it integrates the CoinPaprika API to fetch real-time cryptocurrency data. The game consists of three rounds, provides instant feedback on guesses, displays a final score, and provides a restart option for replayability. I developed this crypto guess game for the Moringa School SDF-PT10 Phase 1 Final Project to demonstrate asynchronous API calls, event handling, and deployment on GitHub Pages.
 
 How to Play
 
